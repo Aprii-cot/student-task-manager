@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Student Task Manager</h1>
+        <p class="subtitle">Organize your tasks. Stay productive.</p>
+
+        <!-- Task Input Section -->
+        <div class="task-input">
+
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Enter your task..."
+            >
+
+            <select id="subject">
+                <option value="General">General</option>
+                <option value="Web Development">Web Development</option>
+                <option value="DSA">DSA</option>
+                <option value="C++">C++</option>
+                <option value="College">College</option>
+            </select>
+
+            <input 
+                type="date" 
+                id="deadline"
+            >
+
+            <button id="addTaskBtn">
+                Add Task
+            </button>
+
+        </div>
+
+
+        <!-- Task Statistics -->
+        <div class="stats">
+
+            <div class="stat-box">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 id="pendingTasks">0</h3>
+                <p>Pending</p>
+            </div>
+            </div>
+
+
+        <!-- Task List -->
+        <div class="task-list">
+
+    <div class="task-header">
+        <h2>Your Tasks</h2>
+
+        <button id="clearAllBtn" class="clear-all-btn">
+            Clear All
+        </button>
+    </div>
+
+    <div id="tasksContainer">
+
+        <!-- Tasks will appear here -->
+
+    </div>
+
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
